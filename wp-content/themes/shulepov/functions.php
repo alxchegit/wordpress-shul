@@ -181,3 +181,11 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/*
+*
+*https://studio-gost.ru/otklyuchenie-avtoformatirovanie-v-wordpress/
+*
+*/
+remove_filter(‘the_content’,’wptexturize’); // Отключаем автоформатирование в полном посте
+remove_filter(‘the_excerpt’,’wptexturize’); // Отключаем автоформатирование в кратком(анонсе) посте
+remove_filter(‘comment_text’, ‘wptexturize’); // Отключаем автоформатирование в комментариях
