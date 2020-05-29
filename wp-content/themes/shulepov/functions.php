@@ -143,8 +143,8 @@ add_action( 'widgets_init', 'default_s_widgets_init' );
  * Enqueue scripts and styles.
  */
 function default_s_scripts() {
-	wp_enqueue_style( 'default_s-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_style_add_data( 'default_s-style', 'rtl', 'replace' );
+	wp_enqueue_style( 'shulepov', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_enqueue_style( 'animate-css', get_template_directory_uri()."/css/animate.css", array(), _S_VERSION );
 
 	wp_enqueue_script( 'default_s-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 

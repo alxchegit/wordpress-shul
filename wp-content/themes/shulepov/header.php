@@ -11,25 +11,26 @@
 
 ?>
 
-<!doctype html><html lang="ru-RU">
+<!doctype html>
+<html <?php language_attributes(); ?>>
 <head> 
 
-<script type="lazyload">window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	<script type="lazyload">window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
 
-  gtag('config', 'UA-92776349-1');</script> 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  gtag('config', 'UA-92776349-1');</script> 
+	<meta charset="<?php bloginfo( 'charset' ); ?>" />  
+	<meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <link rel="profile" href="https://gmpg.org/xfn/11">
-  <title>Частный веб-разработчик Шулепов Александр | Создание и продвижение сайтов</title>
-  <!-- ??????????????????????????????? -->
-  <!-- <link rel="stylesheet" href="<?php bloginfo('url');?>/wp-content/cache/wnw-cache/all-css/1d9d03435b40a4e241c130d4be0fa6ca.css" /> -->
-  <!-- ??????????????????????????????? -->
-  <link rel="stylesheet" href="<?php bloginfo('url');?>/wp-content/cache/wnw-cache/all-css/14b79d52e128ad8047e512f56e8d815f.css" />
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<title><?php the_title() ?></title>
+	<!-- ??????????????????????????????? -->
+	<!-- <link rel="stylesheet" href="<?php bloginfo('url');?>/wp-content/cache/wnw-cache/all-css/1d9d03435b40a4e241c130d4be0fa6ca.css" /> -->
+	<!-- ??????????????????????????????? -->
+	<!-- <link rel="stylesheet" href="<?php bloginfo('url');?>/wp-content/cache/wnw-cache/all-css/14b79d52e128ad8047e512f56e8d815f.css" /> -->
 
-  <style>@keyframes fadeIn {  to {    opacity: 1;  }}.fade-in {  opacity: 0;  animation: fadeIn .5s ease-in 1 forwards;}.is-paused {  animation-play-state: paused;}</style>
+	<style>@keyframes fadeIn {  to {    opacity: 1;  }}.fade-in {  opacity: 0;  animation: fadeIn .5s ease-in 1 forwards;}.is-paused {  animation-play-state: paused;}</style>
 <style>.wpcf7-submit{
 			display:none;
 		}
@@ -130,16 +131,16 @@
 		}</script>
 
 <!-- <link rel="canonical" href="https://shulepov-code.ru/" /> -->
-<link rel="canonical" href="<?php bloginfo('url'); ?>/" />
+<!-- <link rel="canonical" href="<?php bloginfo('url'); ?>/" /> -->
 
 <link rel='dns-prefetch' href='//code.jquery.com' />
 <!-- <link rel="alternate" type="application/rss+xml" title="Частный веб-разработчик Шулепов Александр &raquo; Лента" href="https://shulepov-code.ru/feed/" />
 <link rel="alternate" type="application/rss+xml" title="Частный веб-разработчик Шулепов Александр &raquo; Лента комментариев" href="https://shulepov-code.ru/comments/feed/" />
  -->
- <link rel='stylesheet' id='animate-css'  href='<?php bloginfo('url'); ?>/wp-content/themes/shulepov/css/animate.css' type='text/css' media='all' />
+ 
 <script type='text/javascript' src='https://code.jquery.com/jquery-3.4.1.min.js'></script>       
-<!-- <link rel='https://api.w.org/' href='<?php bloginfo('url'); ?>/wp-json/' /> -->
-<meta name="generator" content="WordPress 5.4.1" />
+ <!-- <link rel='https://api.w.org/' href='<?php bloginfo('url'); ?>/wp-json/' />   -->
+<!-- <meta name="generator" content="WordPress 5.4.1" /> -->
 
 <link rel="icon" href="<?php bloginfo('url'); ?>/wp-content/uploads/2019/10/favicon.ico" sizes="32x32" />
 <link rel="icon" href="<?php bloginfo('url'); ?>/wp-content/uploads/2019/10/favicon.ico" sizes="192x192" />
@@ -172,15 +173,15 @@
     })(document, window, "yandex_metrika_callbacks");</script> 
 <noscript>
 	<div>
-		<img data-class="LazyLoad" src="https://shulepov-code.ru/blank.png" data-src="https://mc.yandex.ru/watch/55302157" style="position:absolute; left:-9999px;" alt="" />
+		<img data-class="LazyLoad" src=" <?php bloginfo('url') ?>/blank.png" data-src="https://mc.yandex.ru/watch/55302157" style="position:absolute; left:-9999px;" alt="" />
 </div>
 	</noscript>
 
 <style>@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Montserrat|Oswald&display=swap&subset=cyrillic');</style>
-
+<?php wp_head(); ?>
 </head>
 
-    <body class="home page-template page-template-front-page page-template-front-page-php page page-id-5">
+    <body <?php body_class(); ?>>
 		<!-- <div class="glitch-wrapper">
 			<div class="glitch" data-text="SHULEPOV_CODE" style="display:none;">SHULEPOV_CODE</div>
 		</div> -->
@@ -200,11 +201,12 @@
 	</div>
 	</div>
 	<div class="languages">
-<a href="#" class="lang-ru">Eng</a>
+		<a href="#" class="lang-ru">Eng</a>
 	</div> 
 	<a href="#contacts" class="btn-3d header-btn" id="header-zakazat">
 		<div class="side front">Заказать</div>
-		<div class="side bottom">Заказать</div> </a>
+		<div class="side bottom">Заказать</div> 
+	</a>
 	<ul class="header-contacts d-flex align-items-center">
 		<li class="social-icon">
 			<a href="https://vk.com/"><i class="fab fa-vk"></i></a></li>
@@ -232,6 +234,6 @@
 </div>
 </div>
 
-<?php wp_head(); ?></header>
+</header>
 
 
