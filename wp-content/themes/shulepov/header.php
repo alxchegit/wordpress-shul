@@ -6,16 +6,14 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package default_s
+ * @package shulepov
  */
 
 ?>
 
 <!doctype html>
 <html <?php language_attributes(); ?>>
-<head> 
-
-	
+<head> 	
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />  
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   
@@ -26,7 +24,9 @@
 	<!-- ??????????????????????????????? -->
 	<!-- <link rel="stylesheet" href="<?php bloginfo('url');?>/wp-content/cache/wnw-cache/all-css/14b79d52e128ad8047e512f56e8d815f.css" /> -->
 
-	<style>@keyframes fadeIn {  to {    opacity: 1;  }}.fade-in {  opacity: 0;  animation: fadeIn .5s ease-in 1 forwards;}.is-paused {  animation-play-state: paused;}</style>
+<style>
+	@keyframes fadeIn {  to {    opacity: 1;  }}.fade-in {  opacity: 0;  animation: fadeIn .5s ease-in 1 forwards;}.is-paused {  animation-play-state: paused;}</style>
+
 <style>.wpcf7-submit{
 			display:none;
 		}
@@ -34,6 +34,7 @@
 			display:block;
 		}
 		.grecaptcha-badge {display: none;}</style>
+
 <script type="lazyload">
 	var contactform = [];
 		var checkIfCalled = true;
@@ -189,6 +190,7 @@
 	<div class="brief-prime" onclick="">
 		<i class="fas fa-pencil-alt"></i> Бриф <i class="fas fa-angle-down"></i>
 	</div>
+	<?php wp_nav_menu(); ?>
 	<div class="brief-all"> 
 		<a href="/brif-na-razrabotku-sajta/">Бриф на разработку сайта</a> 
 		<a href="/brif-na-prodvizhenie-sajta/">Бриф на продвижение сайта</a> 

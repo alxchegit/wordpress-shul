@@ -296,7 +296,7 @@ jQuery('.imes').attr("style", "display: none !important");
 					if(inline_scripts[ii].getAttribute("type") !== null && inline_scripts[ii].getAttribute("type") == "lazyload"){
 						var s = document.createElement("script");
                         s.innerHTML = inline_scripts[ii].innerHTML;
-                        insertAfter(s,inline_scripts[ii]);
+                        insertAfter(s, inline_scripts[ii]);
 						inline_scripts[ii].parentNode.removeChild(inline_scripts[ii]);
 					}
 				}
@@ -337,7 +337,7 @@ jQuery('.imes').attr("style", "display: none !important");
 		function delay_if_var_not_exists(var_text){
 		    if(typeof(ymaps) !== "object"){
 		        console.log(typeof(ymaps));
-		      setTimeout(function(){delay_if_var_not_exists(var_text)},200);  
+		      	setTimeout(function(){delay_if_var_not_exists(var_text)},200);  
 		    }else{
 		        load_intJS();
 		    }
@@ -547,6 +547,55 @@ jQuery('.imes').attr("style", "display: none !important");
         lazyload_img(iframes,bodyRect,window_height,win_width);
 
     }</script>
+
+    <script defer="defer" id="main-js" src=" <?php bloginfo( 'template_directory' ); ?>/js/main.js"></script>
+ 
+<div id="fancybox-tmp"></div>
+<div id="fancybox-loading"><div></div></div>
+<div id="fancybox-overlay"></div>
+<div id="fancybox-wrap" class="fancybox-ie">
+<div id="fancybox-outer">
+<div class="fancybox-bg" id="fancybox-bg-n"></div>
+<div class="fancybox-bg" id="fancybox-bg-ne"></div>
+<div class="fancybox-bg" id="fancybox-bg-e"></div>
+<div class="fancybox-bg" id="fancybox-bg-se"></div>
+<div class="fancybox-bg" id="fancybox-bg-s"></div>
+<div class="fancybox-bg" id="fancybox-bg-sw"></div>
+<div class="fancybox-bg" id="fancybox-bg-w"></div>
+<div class="fancybox-bg" id="fancybox-bg-nw"></div>
+<div id="fancybox-content"></div>
+<a id="fancybox-close"></a>
+<div id="fancybox-title"></div>
+<a id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a>
+<a id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div>
+
+
+<div id="pp-nav" class="right" style="color: rgb(242, 242, 242); margin-top: -251px;"><ul>
+	<li data-tooltip="Обо мне">
+<a href="#home" class="active"><span style="border-color: rgb(204, 204, 204);"></span></a></li>
+	<li data-tooltip="Мои плюсы">
+<a href="#advantages"><span style="border-color: rgb(204, 204, 204);"></span></a></li>
+	<li data-tooltip="Услуги">
+<a href="#services"><span style="border-color: rgb(204, 204, 204);"></span></a></li>
+	<li data-tooltip="Портфолио">
+<a href="#portfolio"><span style="border-color: rgb(204, 204, 204);"></span></a></li>
+	<li data-tooltip="Блог">
+<a href="#blog"><span style="border-color: rgb(204, 204, 204);"></span></a></li>
+	<li data-tooltip="Интервью со мной">
+<a href="#interview"><span style="border-color: rgb(204, 204, 204);"></span></a></li>
+	<li data-tooltip="Условия обслуживания">
+<a href="#conditions"><span style="border-color: rgb(204, 204, 204);"></span></a></li>
+	<li data-tooltip="Все включено">
+<a href="#all-inclusive"><span style="border-color: rgb(204, 204, 204);"></span></a></li>
+	<li data-tooltip="Технические аспекты">
+<a href="#sites"><span style="border-color: rgb(204, 204, 204);"></span></a></li>
+	<li data-tooltip="Скорость">
+<a href="#time"><span style="border-color: rgb(204, 204, 204);"></span></a></li>
+	<li data-tooltip="Заказ">
+<a href="#contacts"><span style="border-color: rgb(204, 204, 204);"></span></a></li></ul>
+</div>
+
+
 
 <?php wp_footer(); ?></body></html>
 

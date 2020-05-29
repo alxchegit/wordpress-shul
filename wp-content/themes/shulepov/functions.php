@@ -55,6 +55,8 @@ function default_s_scripts() {
 	wp_enqueue_style( 'shulepov', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_enqueue_style( 'animate-css', get_template_directory_uri()."/css/animate.css", array(), _S_VERSION );
 
+	wp_deregister_script( 'jquery' );
+	
 	wp_enqueue_script( 'scripts', get_template_directory_uri() . '/js/scripts.min.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'main', get_template_directory_uri() . '/js/main.js', array(), _S_VERSION, true );
 
@@ -93,7 +95,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 *
 *https://studio-gost.ru/otklyuchenie-avtoformatirovanie-v-wordpress/
 *
-*/
-remove_filter(‘the_content’,’wptexturize’); // Отключаем автоформатирование в полном посте
-remove_filter(‘the_excerpt’,’wptexturize’); // Отключаем автоформатирование в кратком(анонсе) посте
-remove_filter(‘comment_text’, ‘wptexturize’); // Отключаем автоформатирование в комментариях
+// */
+// remove_filter(‘the_content’,’wptexturize’); // Отключаем автоформатирование в полном посте
+// remove_filter(‘the_excerpt’,’wptexturize’); // Отключаем автоформатирование в кратком(анонсе) посте
+// remove_filter(‘comment_text’, ‘wptexturize’); // Отключаем автоформатирование в комментариях
