@@ -15,11 +15,7 @@
 <html <?php language_attributes(); ?>>
 <head> 
 
-	<script type="lazyload">window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'UA-92776349-1');</script> 
+	
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />  
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   
