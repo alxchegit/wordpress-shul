@@ -115,17 +115,19 @@
 	<link rel='dns-prefetch' href='//code.jquery.com' />
 	<link rel="alternate" type="application/rss+xml" title="Частный веб-разработчик Шулепов Александр &raquo; Лента" href="https://shulepov-code.ru/feed/" />
 	<link rel="alternate" type="application/rss+xml" title="Частный веб-разработчик Шулепов Александр &raquo; Лента комментариев" href="https://shulepov-code.ru/comments/feed/" />
-	<link rel='stylesheet' id='animate-css'  href='https://shulepov-code.ru/wp-content/themes/shulepov/css/animate.css' type='text/css' media='all' /> 
+	<!-- <link rel='stylesheet' id='animate-css'  href='https://shulepov-code.ru/wp-content/themes/shulepov/css/animate.css' type='text/css' media='all' />  -->
 	<script type='text/javascript' src='https://code.jquery.com/jquery-3.4.1.min.js'></script>       
-	<link rel='https://api.w.org/' href='https://shulepov-code.ru/wp-json/' />
-	<meta name="generator" content="WordPress 5.4.1" />
-	<link rel="alternate" type="application/json+oembed" href="https://shulepov-code.ru/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshulepov-code.ru%2F" />
-	<link rel="alternate" type="text/xml+oembed" href="https://shulepov-code.ru/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshulepov-code.ru%2F&#038;format=xml" />
-	<link rel="icon" href="https://shulepov-code.ru/wp-content/uploads/2019/10/favicon.ico" sizes="32x32" />
+	<!-- <link rel='https://api.w.org/' href='https://shulepov-code.ru/wp-json/' /> -->
+	<!-- <meta name="generator" content="WordPress 5.4.1" /> -->
+	<!-- <link rel="alternate" type="application/json+oembed" href="https://shulepov-code.ru/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshulepov-code.ru%2F" /> -->
+	<!-- <link rel="alternate" type="text/xml+oembed" href="https://shulepov-code.ru/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshulepov-code.ru%2F&#038;format=xml" /> -->
+	<!-- <link rel="icon" href="https://shulepov-code.ru/wp-content/uploads/2019/10/favicon.ico" sizes="32x32" />
 	<link rel="icon" href="https://shulepov-code.ru/wp-content/uploads/2019/10/favicon.ico" sizes="192x192" />
 	<link rel="apple-touch-icon" href="https://shulepov-code.ru/wp-content/uploads/2019/10/favicon.ico" />
-	<meta name="msapplication-TileImage" content="https://shulepov-code.ru/wp-content/uploads/2019/10/favicon.ico" />  
-	<script type="lazyload">(function (d, w, c) {
+	<meta name="msapplication-TileImage" content="https://shulepov-code.ru/wp-content/uploads/2019/10/favicon.ico" />   -->
+
+<!-- Yandex metrika -->
+	<!-- <script type="lazyload">(function (d, w, c) {
 	        (w[c] = w[c] || []).push(function() {
 	            try {
 	                w.yaCounter55302157 = new Ya.Metrika({
@@ -155,19 +157,23 @@
 			<img data-class="LazyLoad" src="https://shulepov-code.ru/blank.png" data-src="https://mc.yandex.ru/watch/55302157" style="position:absolute; left:-9999px;" alt="" />
 		
 	</div>
-	</noscript>
+	</noscript> -->
 
 	<style >@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Montserrat|Oswald&display=swap&subset=cyrillic');</style>
+	<!-- wp_head start here v -->
+	<?php wp_head() ?>
 </head>
 
-<body class="home page-template page-template-front-page page-template-front-page-php page page-id-5">
+<!-- <body class="home page-template page-template-front-page page-template-front-page-php page page-id-5"> -->
+<body <?php body_class(); ?>>
 	
+	<?php if( is_front_page()) { ?>
 	<div class="glitch-wrapper">
-		<div class="glitch" data-text="ALXCHE_CODE" style="display:none;">ALXCHE_CODE </div>
+		<div class="glitch" data-text="SHULEPOV_CODE" style="display:none;">SHULEPOV_CODE </div>
 	</div>
-
+<?php } ?>
 	<!-- header block -->
-	<header class="header header_dark">
+	<header class="header header_dark <?php if(!is_front_page()){echo "header-inner";}  ?>">
 		<div class="header-wrap d-flex align-items-center"> 
 			<a href="/" class="logo logo-white"> shulepov_code </a>
 			<div class="brief-all--wrapper link-brif">
