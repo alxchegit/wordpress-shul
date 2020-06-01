@@ -6,10 +6,8 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- google-site-verification -->
-	<!-- <link rel="profile" href="https://gmpg.org/xfn/11"> -->
-
+	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<title><?php bloginfo( 'name' ) ?></title>
-	<link rel="stylesheet" href="<?php bloginfo( 'url' ) ?>/wp-content/cache/wnw-cache/all-css/1d9d03435b40a4e241c130d4be0fa6ca.css" />
 	<style >@keyframes fadeIn {  to {    opacity: 1;  }}.fade-in {  opacity: 0;  animation: fadeIn .5s ease-in 1 forwards;}.is-paused {  animation-play-state: paused;}</style>
 	<style >.wpcf7-submit{
 				display:none;
@@ -109,55 +107,11 @@
 					}
 				});
 			}</script>
-	<script async="" defer="defer" data-src="https://www.google.com/recaptcha/api.js?onload=renderGoogleInvisibleRecaptchaFront&render=explicit" ></script>
-
-	<link rel="canonical" href="https://shulepov-code.ru/" />
-	<link rel='dns-prefetch' href='//code.jquery.com' />
-	<link rel="alternate" type="application/rss+xml" title="Частный веб-разработчик Шулепов Александр &raquo; Лента" href="https://shulepov-code.ru/feed/" />
-	<link rel="alternate" type="application/rss+xml" title="Частный веб-разработчик Шулепов Александр &raquo; Лента комментариев" href="https://shulepov-code.ru/comments/feed/" />
-	<!-- <link rel='stylesheet' id='animate-css'  href='https://shulepov-code.ru/wp-content/themes/shulepov/css/animate.css' type='text/css' media='all' />  -->
-	<script type='text/javascript' src='https://code.jquery.com/jquery-3.4.1.min.js'></script>       
-	<!-- <link rel='https://api.w.org/' href='https://shulepov-code.ru/wp-json/' /> -->
-	<!-- <meta name="generator" content="WordPress 5.4.1" /> -->
-	<!-- <link rel="alternate" type="application/json+oembed" href="https://shulepov-code.ru/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshulepov-code.ru%2F" /> -->
-	<!-- <link rel="alternate" type="text/xml+oembed" href="https://shulepov-code.ru/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshulepov-code.ru%2F&#038;format=xml" /> -->
-	<!-- <link rel="icon" href="https://shulepov-code.ru/wp-content/uploads/2019/10/favicon.ico" sizes="32x32" />
-	<link rel="icon" href="https://shulepov-code.ru/wp-content/uploads/2019/10/favicon.ico" sizes="192x192" />
-	<link rel="apple-touch-icon" href="https://shulepov-code.ru/wp-content/uploads/2019/10/favicon.ico" />
-	<meta name="msapplication-TileImage" content="https://shulepov-code.ru/wp-content/uploads/2019/10/favicon.ico" />   -->
-
-<!-- Yandex metrika -->
-	<!-- <script type="lazyload">(function (d, w, c) {
-	        (w[c] = w[c] || []).push(function() {
-	            try {
-	                w.yaCounter55302157 = new Ya.Metrika({
-	                    id:55302157,
-	                    clickmap:true,
-	                    trackLinks:true,
-	                    accurateTrackBounce:true,
-	                    webvisor:true
-	                });
-	            } catch(e) { }
-	        });
-
-	        var n = d.getElementsByTagName("script")[0],
-	            s = d.createElement("script"),
-	            f = function () { n.parentNode.insertBefore(s, n); };
-	        s.type = "text/javascript";
-	        s.async = true;
-	        s.src = "https://mc.yandex.ru/metrika/watch.js";
-
-	        if (w.opera == "[object Opera]") {
-	            d.addEventListener("DOMContentLoaded", f, false);
-	        } else { f(); }
-	    })(document, window, "yandex_metrika_callbacks");</script> 
-
-	<noscript>
-		<div>
-			<img data-class="LazyLoad" src="https://shulepov-code.ru/blank.png" data-src="https://mc.yandex.ru/watch/55302157" style="position:absolute; left:-9999px;" alt="" />
 		
-	</div>
-	</noscript> -->
+	<!-- <script type='text/javascript' src='https://code.jquery.com/jquery-3.4.1.min.js'></script>   -->     
+	
+<!-- Yandex metrika -->
+	
 
 	<style >@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Montserrat|Oswald&display=swap&subset=cyrillic');</style>
 	<!-- wp_head start here v -->
