@@ -56,8 +56,6 @@ function default_s_scripts() {
 	wp_enqueue_style( 'animate', get_template_directory_uri()."/css/animate.css");
 
 	wp_deregister_script( 'jquery' );	
-	// wp_enqueue_script( 'scripts', get_template_directory_uri() . '/js/scripts.min.js', array(), _S_VERSION, true );
-	// wp_enqueue_script( 'main', get_template_directory_uri() . '/js/main.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'jquery', 'https://code.jquery.com/jquery-3.4.1.min.js' );
 	wp_enqueue_script( 'all_js', get_template_directory_uri() . '/js/all-js.js', array(), _S_VERSION, true );
 
@@ -65,6 +63,10 @@ function default_s_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'default_s_scripts' );
 
+/*
+*
+* https://www.kobzarev.com/wordpress/defer-async-wordpress-scripts/
+*/
 function add_async_to_script( $tag, $handle ) {
     if ( 'all_js' !== $handle ) {
         return $tag;

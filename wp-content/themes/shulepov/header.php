@@ -133,12 +133,22 @@
 			<div class="brief-all--wrapper link-brif">
 			<div class="brief-prime" onclick=""><i class="fas fa-pencil-alt"></i> Бриф <i class="fas fa-angle-down"></i>
 			</div>
-			<div class="brief-all"> 
-			<a href="/brif-na-razrabotku-sajta/">Бриф на разработку сайта</a> 
-			<a href="/brif-na-prodvizhenie-sajta/">Бриф на продвижение сайта</a> 
-			<a href="/brif-na-razmeshhenie-reklamy/">Бриф на размещение рекламы</a> 
-			<a href="/brif-na-sozdanie-logotipa/">Бриф на создание лого</a>
-				</div>
+			<!-- brief -->
+			<div class="brief-all">
+				<?php $params = array(
+					'menu'            => 'brief',
+                    'container'=> false, // Без div обертки
+                    'echo'=> false, // Чтобы можно было его предварительно вернуть
+                    'items_wrap'=> '%3$s', // Разделитель элементов
+                    'depth'=> 0, // Глубина вложенности
+                    'theme_location' => 'top',
+                );
+                // Чистим все теги, кроме ссылок
+                print strip_tags(wp_nav_menu( $params ), '<a>' );
+                       ?>
+			</div>
+
+			<!-- brief end -->
 			</div>
 			<div class="languages"> 
 			<a href="#" class="lang-ru">Eng</a></div> 
@@ -150,45 +160,42 @@
 
 			<ul class="header-contacts d-flex align-items-center">
 				<li class="social-icon"> 
-			<a href="tg://resolve?domain=shulepov_code"><i class="fab fa-telegram-plane"></i></a></li>
+			<a href="#"><i class="fab fa-telegram-plane"></i></a></li>
 					<li class="social-icon social-icon_last"> 
-			<a href="https://api.whatsapp.com/send?phone=79046343892"><i class="fab fa-whatsapp"></i></a></li>
+			<a href="#"><i class="fab fa-whatsapp"></i></a></li>
 					<li class="header-phone"> 
-			<a href="tel:89046343892">8 (904) 634-38-92</a></li>
+			<a href="#">8 (904) 634-38-92</a></li>
 					<li class="social-icon"> 
-			<a href="https://vk.com/im?sel=33602445"><i class="fab fa-vk"></i></a></li>
+			<a href="#"><i class="fab fa-vk"></i></a></li>
 			</ul>
 
 			
 			<a href="#page11" class="callback-btn d-none"> <i class="fas fa-envelope"></i> </a> 
-			<a href="tel:89046343892" class="mobile-phone d-none"> <i class="fas fa-phone"></i> </a>
+			<a href="#" class="mobile-phone d-none"> <i class="fas fa-phone"></i> </a>
 				
 			<!-- правое меню -->
 			<div class="overlay">
-				<nav class="overlayMenu">
-					<ul id="menu-main-menu" class="menu">
-						<li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-5 current_page_item menu-item-25">
-						<a href="https://shulepov-code.ru/" aria-current="page"><i style="" class="wpmi-icon wpmi-position-before wpmi-align-top fa fa-home"></i>Главная страница</a></li>
-						<li id="menu-item-3542" class="d-none menu-item menu-item-type-post_type menu-item-object-page menu-item-3542">
-						<a href="https://shulepov-code.ru/dizajn/">Дизайн</a></li>
-						<li id="menu-item-3544" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3544">
-						<a href="https://shulepov-code.ru/razrabotka/">Разработка сайтов</a></li>
-						<li id="menu-item-3543" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3543">
-						<a href="https://shulepov-code.ru/prodvizhenie/">SEO-продвижение</a></li>
-						<li id="menu-item-4475" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4475">
-						<a href="https://shulepov-code.ru/jekspress-sajt/">Экспресс-сайт</a></li>
-						<li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31">
-						<a href="https://shulepov-code.ru/sotrudnichestvo/">Сотрудничество</a></li>
-						<li id="menu-item-5004" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5004">
-						<a href="https://shulepov-code.ru/lichnye-konsultacii/">Личные консультации</a></li>
-						<li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28">
-						<a href="https://shulepov-code.ru/portfolio/">Портфолио</a></li>
-						<li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26">
-						<a href="https://shulepov-code.ru/blog/">Блог</a></li>
-					</ul>
-
-				</nav>
+			<!-- wp_nav_menu -->
+			<?php wp_nav_menu( array(
+				'theme_location'  => '',
+				'menu'            => 'main-menu',
+				'container'       => 'nav',
+				'container_class' => 'overlayMenu',
+				'container_id'    => false,
+				'menu_class'      => 'menu',
+				'menu_id'         => '',
+				'echo'            => true,
+				'fallback_cb'     => '',
+				'before'          => '',
+				'after'           => '',
+				'link_before'     => '',
+				'link_after'      => '',
+				'items_wrap'      => '<ul id = "%1$s" class = "%2$s">%3$s</ul>',
+				'depth'           => 0,
+				'walker'          => '',
+			) ); ?>
 			</div>
+		
 		<!--  -->
 
 			<div class="menu__btn hamburger-menu navBurger" role="navigation" id="navToggle"> 
